@@ -1,0 +1,12 @@
+.DS_Store
+.vs/
+bin/
+obj/
+.vs/
+packages/
+# Editor directories and files
+.idea
+*.ntvs*
+*.njsproj
+*.txt
+*.doc
