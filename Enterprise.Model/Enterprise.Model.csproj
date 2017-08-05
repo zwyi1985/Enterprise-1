@@ -49,10 +49,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin.cs">
+      <DependentUpon>LocalData.tt</DependentUpon>
+    </Compile>
     <Compile Include="LocalData.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>LocalData.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LocalData.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LocalData.tt</DependentUpon>
     </Compile>
     <Compile Include="LocalData.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -62,26 +70,30 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.Config" />
     <EntityDeploy Include="LocalData.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>LocalData.Designer.cs</LastGenOutput>
     </EntityDeploy>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.Config" />
     <None Include="LocalData.edmx.diagram">
       <DependentUpon>LocalData.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="LocalData.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>LocalData.Context.cs</LastGenOutput>
-    </Content>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Content Include="LocalData.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LocalData.edmx</DependentUpon>
+      <LastGenOutput>LocalData.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="LocalData.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LocalData.edmx</DependentUpon>
+      <LastGenOutput>LocalData.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
