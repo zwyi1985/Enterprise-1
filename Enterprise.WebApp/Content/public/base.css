@@ -1,0 +1,64 @@
+/*
+ * 基础样式设置
+ * Author: bishisan
+ * Date: 2017/8/17 
+ */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.15
+}
+
+.container-fluid {
+    width: 100%
+}
+
+.container {
+    min-width: 1024px;
+    margin: auto
+}
+
+.sm-1,
+.sm-6,
+.sm-4 {
+    float: left
+}
+
+.sm-6 {
+    width: 50%
+}
+
+.sm-8 {
+    width: 75%
+}
+
+.sm-4 {
+    widows: 25%
+}
+
+.pull-left {
+    float: left
+}
+
+.pull-right {
+    float: right
+}
+
+a {
+    text-decoration: none
+}
+
+a:hover {
+    color: #f00
+}
+
+ul {
+    margin: 0;
+    padding: 0
+}
+
+.list-unstyled {
+    list-style-type: none
+}

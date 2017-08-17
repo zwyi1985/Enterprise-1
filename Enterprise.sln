@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enterprise.Model", "Enterpr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enterprise.WebApp", "Enterprise.WebApp\Enterprise.WebApp.csproj", "{5D43F45B-0C58-4BD1-A06F-1CDB55C329D8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{E3BE5684-5FE3-457C-B70D-FB6A79EE68F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{7BB40DDB-5A15-43DD-AC77-CD5C1DAF9848}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,8 +61,15 @@ Global
 		{5D43F45B-0C58-4BD1-A06F-1CDB55C329D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D43F45B-0C58-4BD1-A06F-1CDB55C329D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D43F45B-0C58-4BD1-A06F-1CDB55C329D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BB40DDB-5A15-43DD-AC77-CD5C1DAF9848}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BB40DDB-5A15-43DD-AC77-CD5C1DAF9848}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BB40DDB-5A15-43DD-AC77-CD5C1DAF9848}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BB40DDB-5A15-43DD-AC77-CD5C1DAF9848}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7BB40DDB-5A15-43DD-AC77-CD5C1DAF9848} = {E3BE5684-5FE3-457C-B70D-FB6A79EE68F6}
 	EndGlobalSection
 EndGlobal

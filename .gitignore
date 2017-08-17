@@ -3,6 +3,7 @@
 bin/
 obj/
 .vs/
+Log/
 packages/
 # Editor directories and files
 .idea

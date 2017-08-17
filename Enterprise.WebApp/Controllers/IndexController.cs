@@ -11,17 +11,20 @@ namespace Enterprise.WebApp.Controllers
         Common.ValidateCode code = new Common.ValidateCode();
 
         // GET: Index
+
+        [Route("")]
         public ActionResult Index()
         {
-
+            ViewBag.Title = "河南龙翔供电服务有限公司";
+           
             return View();
         }
 
-        public ActionResult CreateImg()
+        [Route("about")]
+        public ActionResult About()
         {
-            string codeStr = code.CreateRandomCode();
-            byte[] buffer = code.CreateImg(codeStr);
-            return File(buffer, @"image/jpeg");
+            ViewBag.Title = "关于我们";
+            return View();
         }
     }
 }
